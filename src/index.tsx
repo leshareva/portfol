@@ -11,8 +11,8 @@ ReactDOM.render(
   <Provider store={store} >
     <Router>
       <Route exact={true} path="/" render={() => <App type="web" />} />
-      <Route exact={true} path="/vk/:rubric_id" render={({ match }) => <App type="vk" rubric_id={match.params.rubric_id} />} />
-      <Route exact={true} path="/:rubric_id/user/:vk_id" render={({ match }) => <App type="web" vk_id={match.params.vk_id} rubric_id={match.params.rubric_id}/>} />
+      <Route exact={true} path="/portfol/vk/:rubric_id" render={({ match }) => <App type="vk" rubric_id={match.params.rubric_id} />} />
+      <Route exact={true} path="/portfol/:rubric_id/user/:vk_id" render={({ match }) => <App type="web" vk_id={match.params.vk_id} rubric_id={match.params.rubric_id}/>} />
     </Router>
   </Provider>,
   document.getElementById('root')
