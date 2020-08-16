@@ -10,9 +10,9 @@ import { store } from './store';
 ReactDOM.render(
   <Provider store={store} >
     <Router>
-      <Route exact={true} path="/" render={() => <App type="web" />} />
-      <Route exact={true} path="/portfol/vk/:rubric_id" render={({ match }) => <App type="vk" rubric_id={match.params.rubric_id} />} />
-      <Route exact={true} path="/portfol/:rubric_id/user/:vk_id" render={({ match }) => <App type="web" vk_id={match.params.vk_id} rubric_id={match.params.rubric_id}/>} />
+      <Route exact={true} path={process.env.PUBLIC_URL+"/"} render={() => <App type="web" />} />
+      <Route exact={true} path={process.env.PUBLIC_URL+"/vk/:rubric_id"} render={({ match }) => <App type="vk" rubric_id={match.params.rubric_id} />} />
+      <Route exact={true} path={process.env.PUBLIC_URL+"/:rubric_id/user/:vk_id"} render={({ match }) => <App type="web" vk_id={match.params.vk_id} rubric_id={match.params.rubric_id}/>} />
     </Router>
   </Provider>,
   document.getElementById('root')
