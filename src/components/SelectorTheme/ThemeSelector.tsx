@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { iUser, iWork, iRubric } from '../../Api/interfaces'
 import { init, onElementClick } from './actions'
-import ThemeDetailsComponent from './../ThemeDetailsComponent/ThemeDetailsComponent'
+import ThemeDetailsComponent from '../ThemeDetailsComponent/ThemeDetailsComponent'
 import styled from 'styled-components'
 import { SmallText } from '../UI'
 import HotIcon from '../../images/hot.svg';

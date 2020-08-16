@@ -1,4 +1,4 @@
-import { iTheme } from './../../Api/interfaces';
+import { iTheme } from '../../Api/interfaces';
 import { openModalSuccess } from '../CardDetailsComponent/actions';
 import { iRubric, iWork } from '../../Api/interfaces';
 import { isMobile } from 'react-device-detect';

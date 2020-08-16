@@ -2,43 +2,9 @@ import React from 'react'
 import moment from 'moment-timezone'
 import { Title, SmallText } from './UI'
 import styled from 'styled-components'
-// import HotIcon from '../../images/hot.svg';
 import Timer from 'react-compound-timer'
 
-// interface iFeebackViewProps {
-//     work: iWork
-// }
 
-
-// const FeedbackTitle = styled(Title)`
-// &::after {
-//     position: absolute;
-//     content: url(${HotIcon});
-//     bottom: -2em;
-//     left: 0%;
-
-// }
-// `
-
-// class FeebackView extends React.Component<iFeebackViewProps, any> {
-//     render() {
-
-//         let work: iWork = {
-//             exercise: {
-//                 title: 'Объявление'
-//             },
-//             feedbacker: {
-
-//             },
-//             text_rate: 'Горячо'
-//         }
-
-//         return <div>
-//             <FeedbackTitle level="2">{work.exercise ? work.exercise.title : null}</FeedbackTitle>
-//             <SmallText>Проверил Лёша Рева</SmallText>
-//         </div>
-//     }
-// }
 
 
 
